@@ -1,0 +1,283 @@
+[33mcommit fb9472c7fbf9979f48ef49aff76903ac130d0959[m
+Author: Leonardo Braga <leonardo.braga@gmail.com>
+Date:   Wed Oct 7 00:51:23 2015 -0400
+
+    Manipulation: Bring tagname regexes up to spec
+    
+    Fixes gh-2005
+    Closes gh-2634
+
+[33mcommit df822caff079177d1840d67e03d6b24a93ea99a5[m
+Author: Jun Sun <klsforever@gmail.com>
+Date:   Wed Dec 30 15:40:08 2015 +0800
+
+    CSS: Add animation-iteration-count to cssNumber, fix tests
+    
+    Fixes gh-2792
+    Closes gh-2793
+
+[33mcommit a4d16a26abe3ea36337f7bfc4d1bfe13b893cd17[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Thu Jan 7 14:06:41 2016 -0500
+
+    Revert "Attributes: Remove undocumented .toggleClass( boolean ) signature"
+    
+    This reverts commit 53f798cf4d783bb813b4d1ba97411bc752b275f3.
+    
+    - Turns out this is documented, even if not fully. Need to deprecate before removal.
+
+[33mcommit 1823a715660a5f31dd7e05672e9ad020066256a9[m
+Author: Jae Sung Park <alberto.park@gmail.com>
+Date:   Thu Dec 3 15:34:03 2015 +0900
+
+    Event: Remove duplicated word text on comment
+    
+    Closes #2751
+
+[33mcommit fbf829b7245f7d76ea02a44ab0a62427214b7575[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Mon Nov 30 11:30:31 2015 -0500
+
+    Attributes: exclusively lowercase A-Z in attribute names
+    
+    Fixes gh-2730
+    Close gh-2749
+
+[33mcommit 6680c1b29ea79bf33ac6bd31578755c7c514ed3e[m
+Author: Oleg Gaidarenko <markelog@gmail.com>
+Date:   Sat Nov 14 01:28:16 2015 +0300
+
+    Core: do not expose second argument of the `jQuery.globalEval`
+    
+    Closes jquery/api.jquery.com#831
+    Closes gh-2718
+
+[33mcommit e077ffb083743f4a4b990f586c9d25d787e7b417[m
+Author: Dave Methvin <dave.methvin@gmail.com>
+Date:   Sun Nov 15 21:51:18 2015 -0500
+
+    Ajax: Preserve URL hash on requests
+    
+    Fixes gh-1732
+    Closes gh-2721
+
+[33mcommit eaa3e9f0cfc68083556cf61195821d90e369f646[m
+Author: Richard Gibson <richard.gibson@gmail.com>
+Date:   Sun Nov 8 21:49:47 2015 -0500
+
+    Ajax: Golf away 21 bytes
+    
+    Close gh-2699
+
+[33mcommit e0c25abb435db6e210d00407af2ba40e5f0b56ad[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Mon Nov 16 15:49:59 2015 -0500
+
+    Docs: add a note about loading source with AMD
+    
+    - Moves the note about the watch task and the note about
+      loading with AMD to their own section under
+      "Test Suite Tips"
+    
+    Fixes gh-2714
+    Close gh-2725
+
+[33mcommit cb80b42b91bc7d0e75fb842f733878b848a8b9c1[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Mon Nov 16 15:36:48 2015 -0500
+
+    Effects: add tests for using jQuery.speed directly
+    
+    Fixes gh-2716
+    Close gh-2724
+
+[33mcommit cf7102c3f1bcbd135f24947a3a3216cff272bdc2[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Thu Nov 12 13:18:59 2015 -0500
+
+    Release: push a custom slim build to the CDN
+    
+    Fixes gh-2653
+    Close gh-2711
+
+[33mcommit 78b9eac1198627eb4dad0cc35334c7704449f310[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Wed Nov 11 10:35:37 2015 -0500
+
+    Deferred: syncronize single and multiple target handling in $.when
+    
+    Fixes gh-2546
+    Fixes gh-2018
+    Close gh-2707
+
+[33mcommit 8b65446a60c421cfc3411fe273edcc506783f628[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Thu Nov 12 13:25:42 2015 -0500
+
+    Release: update authors
+
+[33mcommit 5f5aee3b582cff72823efe9ed2785c1d17eadfd3[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Thu Nov 12 13:23:53 2015 -0500
+
+    Release: use chalk instead of colors for terminal colors
+
+[33mcommit 88046440da8f5433b510ea705255d1df12c2963e[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Tue Nov 10 13:26:15 2015 -0500
+
+    Selector: pass jQuery unit tests with selector-native
+    
+    - Ignore certain tests that obviously are not supported
+    - Beefed up the sortOrder, uniqueSort, isXMLDoc, and attr functions
+    
+    Fixes gh-1742
+    Fixes gh-2048
+    Close gh-2703
+
+[33mcommit ab06be561ec74cccaa2d581830210f82326f05c3[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Tue Nov 10 12:44:35 2015 -0500
+
+    Effects: fix loading showHide in AMD mode
+
+[33mcommit 29370190605ed5ddf5d0371c6ad886a4a4b5e0f9[m
+Author: Dave Methvin <dave.methvin@gmail.com>
+Date:   Mon Nov 9 18:14:59 2015 -0500
+
+    Offset: offsetLeft/Top on empty set returns undefined
+    
+    Fixes gh-2319
+    Closes gh-2702
+    Ref gh-2701
+
+[33mcommit 97d79ecf6b6c5cc3c1485eb3c46e12986a978f57[m
+Author: Dave Methvin <dave.methvin@gmail.com>
+Date:   Mon Nov 9 17:49:01 2015 -0500
+
+    Dimensions: Empty sets should return undefined
+    
+    Ref gh-2319
+    Closes gh-2701
+
+[33mcommit 75b3cdd509a2cf0a704767d04557ec392112a438[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Fri Nov 6 16:16:53 2015 -0500
+
+    Dimensions: properly manipulate non-px values
+    
+    Fixes gh-1712
+    Close gh-2695
+
+[33mcommit 22449eb968622c2e14d6c8d8de2cf1e1ba4adccd[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Fri Nov 6 18:36:38 2015 -0500
+
+    Manipulation: execute scripts from iframe in the iframe's context
+    
+    Fixes gh-1757
+    Close gh-2696
+
+[33mcommit 67fa2eab6ef323b1d894e9e7f054c6e8c844d304[m
+Author: Dave Methvin <dave.methvin@gmail.com>
+Date:   Sat Nov 7 15:51:03 2015 -0500
+
+    Event: Move VML test out of event alias test
+    
+    Ref gh-2693
+
+[33mcommit 7d44d7f9e7cb73ff2b373f08cea13ea9958bb462[m
+Author: Dave Methvin <dave.methvin@gmail.com>
+Date:   Fri Nov 6 12:24:06 2015 -0500
+
+    Dimensions: outerWidth/Height include scrollbar
+    
+    Fixes gh-1729
+    Closes gh-2694
+
+[33mcommit 2cb8ebadcb77da1c1a12c07bc5274fd456bf3b01[m
+Author: Dave Methvin <dave.methvin@gmail.com>
+Date:   Fri Nov 6 09:59:14 2015 -0500
+
+    Event: Make event aliases optional in unit tests
+
+[33mcommit c9935b6d2db9e1be4bed12f7419e98cdca45763e[m
+Author: Dave Methvin <dave.methvin@gmail.com>
+Date:   Wed Nov 4 21:53:09 2015 -0500
+
+    Event: Separate trigger/simulate into its own module
+    
+    Fixes gh-1864
+    Closes gh-2692
+    
+    This also pulls the focusin/out special event into its own module, since that
+    depends on simulate(). NB: The ajax module triggers events pretty heavily.
+
+[33mcommit 1da144867f3a49bbac4342bd3f3242baae108eb9[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Thu Nov 5 18:13:00 2015 -0500
+
+    Tests: make editorconfig match css style
+
+[33mcommit 79fc806e8500372a2278795c068d039ee287535f[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Wed Nov 4 18:34:14 2015 -0500
+
+    Attributes: return empty array for select-multiple with no values
+    
+    Fixes gh-2562
+    Close gh-2689
+
+[33mcommit e05c63e17a037d550e7dde5d805ee5c4214ee44b[m
+Author: Dave Methvin <dave.methvin@gmail.com>
+Date:   Wed Nov 4 13:27:39 2015 -0500
+
+    Event: Add basic unit tests for event aliases
+    
+    Fixes gh-2302
+    Closes gh-2687
+    
+    At the moment it's not possible to run the full event unit tests without aliases
+    so this was just tested with a custom build by running this one test.
+
+[33mcommit 493b0fd7f51054345abe981270bd7839825f79dd[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Sun Oct 18 12:24:01 2015 -0400
+
+    Event: Ensure delegation doesn't error on comment nodes
+    
+    Fixes gh-2055
+    Close gh-2659
+
+[33mcommit 769446c69775f6c44e35cee1bcdeccafba51be7b[m
+Author: Dave Methvin <dave.methvin@gmail.com>
+Date:   Sat Oct 31 11:24:04 2015 -0400
+
+    Ajax: Don't throw exceptions on binary data response
+    
+    Fixes gh-2498
+    Closes gh-2682
+    
+    The added unit test shows how this could be used to support an
+    ArrayBuffer return, but $.ajax does not support it natively.
+    The goal with this change was to avoid the exception.
+
+[33mcommit 76e9a95dbeaf28fbc5a64571ebb5959f91a9c14a[m
+Author: Timmy Willison <timmywillisn@gmail.com>
+Date:   Mon Nov 2 12:00:28 2015 -0500
+
+    Ajax: trigger error callback on native abort
+    
+    - IE9 does not have onabort. Use onreadystatechange instead.
+    
+    Fixes gh-2079
+    Close gh-2684
+
+[33mcommit 70605c8e5655da996ebd395e3c43423daaa08d9c[m
+Author: Dave Methvin <dave.methvin@gmail.com>
+Date:   Thu Oct 22 14:25:32 2015 -0400
+
+    Ajax: Only form-encode requests with a body
+    
+    Fixes #2658
+ 
